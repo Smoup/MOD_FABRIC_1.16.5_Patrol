@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "id": "patrol",
+  "version": "${version}",
+  "name": "Patrol",
+  "description": "",
+  "authors": [
+    "Smoup"
+  ],
+  "contact": {
+    "repo": "https://github.com/Smoup/ChatFilter-Fabric"
+  },
+  "license": "All-Rights-Reserved",
+  "icon": "assets/patrol/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "org.patrol.client.PatrolClient"
+    ],
+    "main": [
+      "org.patrol.Patrol"
+    ]
+  },
+  "mixins": [
+    "patrol.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
